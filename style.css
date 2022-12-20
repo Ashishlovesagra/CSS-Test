@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 367px);
+  grid-gap: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.box {
+  border: 3px solid white;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(44, 42, 42);
+}
+.box:hover {
+  background-color: white;
+  color: black;
+}
+.a,
+.b,
+.c,
+.d {
+  display: block;
+}
+span {
+  margin-top: 10px;
+}
+.mainbox {
+  width: 100%;
+  height: 430px;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 12%;
+  background-color: white;
+  animation: ashish 3s infinite;
+  animation-delay: 2s;
+}
+.circle:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 0px;
+}
+@keyframes ashish {
+  0% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: green;
+  }
+  40% {
+    background-color: orange;
+  }
+  60% {
+    background-color: aqua;
+  }
+  80% {
+    background-color: blueviolet;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+  }
+  .box {
+    font-size: 18px;
+  }
+  .circle {
+    position: relative;
+    top: 12%;
+  }
+  .mainbox {
+    height: 450px;
+  }
+}
